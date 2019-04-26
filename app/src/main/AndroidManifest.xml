@@ -2,7 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jackf.contactapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <application
+        android:name=".global"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,7 +22,8 @@
         <activity android:name=".NewContact" />
         <activity android:name=".contactInfoPage" />
         <activity android:name=".contactInfoBusiness" />
-        <activity android:name=".NewBusinessContact"></activity>
+        <activity android:name=".NewBusinessContact" />
+        <activity android:name=".Search"></activity>
     </application>
 
 </manifest>
